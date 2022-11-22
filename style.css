@@ -329,7 +329,7 @@
     @media screen and (max-width: 480px) {
         .hero{
             background-image:url("https://source.unsplash.com/f4RBYsY2hxA/600x");
-            height: 50px;
+            height: 10px;
             background-position: center;
             
     
@@ -338,22 +338,25 @@
             height: 300px;
         }
         h1{
-            font-size: 20px;
+            font-size: 15px;
+            color: white;
         }
         .about-text{
-            background-color: rgba(4,7,32,.3);
+            background-color: rgba(105, 107, 126, 0.3);
             
         }
         .title{
-        font-size: 30px; 
-        padding:30px 10px;  
+        font-size: 20px; 
+        padding:60px 20px; 
+        color: white; 
         
         }
         h3{
-            font-size: 25px;
+            font-size: 20px;
+            color: white;
         }
         .about{
-            height: 500px;;
+            height: 600px;;
             overflow: hidden;
             background-position-x:left ;
         
