@@ -92,6 +92,10 @@
         
     }
     
+    .about-text i{
+        font-size: 40px;
+    }
+
     h3{
         font-size: 40px;
         
@@ -278,7 +282,7 @@
     /*medium screens - Laptops*/
     @media screen and (max-width: 1024px) {
         .hero{
-            background-image:url("https://source.unsplash.com/f4RBYsY2hxA/400x320");
+            background-image:url("img/topo.png");
             height: 500px;
             background-position: center;
         }
@@ -297,23 +301,30 @@
     /*Small screens - tablets*/
     @media screen and (max-width: 768px) {
         .hero{
-            background-image:url("https://source.unsplash.com/f4RBYsY2hxA/600x400");
+            background-image:url("img/topo.png");
             height: 600px;
             background-position: center;
         }
         .hero-text{
-            height: 600px;
+            height: 200px;
         }
         h1{
-            font-size: 60px;
+            font-size: 20px;
         }
         .about{
             overflow: hidden;
         }
+        h3{
+            font-size: 30px;
+            color: white;
+        }
         .about-text{
             background-color: rgba(4,7,32,.5);
-            
         }
+        .about-text i{
+            font-size: 40px;
+        }
+
         .card{
             width: 90%;;
         }
@@ -328,7 +339,7 @@
     /*Extra small screens - phones*/
     @media screen and (max-width: 480px) {
         .hero{
-            background-image:url("https://source.unsplash.com/f4RBYsY2hxA/600x");
+            background-image:url("img/topo.png");
             height: 10px;
             background-position: center;
             
@@ -359,7 +370,10 @@
             height: 600px;;
             overflow: hidden;
             background-position-x:left ;
-        
+        }
+
+        .about-text i{
+            font-size: 40px;
         }
         .card{
             width: 100%;;
