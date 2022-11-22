@@ -329,7 +329,7 @@
     @media screen and (max-width: 480px) {
         .hero{
             background-image:url("https://source.unsplash.com/f4RBYsY2hxA/600x");
-            height: 500px;
+            height: 100px;
             background-position: center;
             
     
