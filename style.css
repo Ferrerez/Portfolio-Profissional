@@ -147,31 +147,33 @@ section div button:hover {
     padding-top: 50px;
 }
 
-.card {
+.card1 {
     background-color: #191919;
     height: 380px;
     width: 300px;
     border-radius: 20px;
     padding: 20px 20px;
     text-align: center;
+    margin-top: 10%;
+    margin-left: 10%;
 }
 
-.card img {
+.card1 img {
     height: 100px;
 }
 
-.card h5 {
+.card1 h5 {
     color: white;
     font-size: 24px;
 }
 
-.card p {
+.card1 p {
     color: #ffffff;
     margin-top: 20px;
     margin-bottom: 40px;
 }
 
-.card a {
+.card1 a {
     background-color: #f90000;
     color: white;
     padding: 10px 20px;
@@ -181,15 +183,13 @@ section div button:hover {
     text-decoration: none;
 }
 
-.card a:hover {
+.card1 a:hover {
     background-color: #000000;
     border: 2px solid #ff0000;
 }
 
 .card-projetos {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
+   margin-top: -50px;
 }
 
 footer {
@@ -203,6 +203,7 @@ footer {
 }
 
 footer h5 {
+    text-align: center;
     color: white;
     font-size: 30px;
 }
@@ -252,6 +253,7 @@ footer p {
     background-size: cover;
     background-position: center;
     background-color: #000000;
+    text-align: center;
    }
 
    .portfolio {
@@ -288,12 +290,19 @@ footer p {
 
    .projetos {
     flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
    }
 
    .card {
     width: 300px;
     margin-right: -45px;
     margin-top: 10%;
+   }
+
+   .card-projetos card1 {
+ 
    }
 
    section div button {
@@ -304,7 +313,7 @@ footer p {
 
    .titulo-projetos {
     font-size: 250%;
-    
+    margin-top: -5%;
    }
 
    .sobre img {
@@ -316,6 +325,15 @@ footer p {
    }
 
    .footer {
+    text-align: center;
+    margin-top: -22%;
+   }
+
+   .footer h5 {
+    font-size: 20px;
+   }
+
+   .footer .direitos {
     text-align: center;
    }
 }
