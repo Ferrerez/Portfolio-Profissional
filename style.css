@@ -188,6 +188,88 @@ section div button:hover {
     border: 2px solid #ff0000;
 }
 
+.card2 {
+    background-color: #191919;
+    height: 380px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px 20px;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.card2 img {
+    height: 100px;
+}
+
+.card2 h5 {
+    color: white;
+    font-size: 24px;
+}
+
+.card2 p {
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.card2 a {
+    background-color: #f90000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.card2 a:hover {
+    background-color: #000000;
+    border: 2px solid #ff0000;
+}
+
+.card3 {
+    background-color: #191919;
+    height: 380px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px 20px;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.card3 img {
+    height: 100px;
+}
+
+.card3 h5 {
+    color: white;
+    font-size: 24px;
+}
+
+.card3 p {
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.card3 a {
+    background-color: #f90000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.card3 a:hover {
+    background-color: #000000;
+    border: 2px solid #ff0000;
+}
+
 .card-projetos {
    margin-top: -50px;
 }
