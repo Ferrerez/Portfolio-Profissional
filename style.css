@@ -5,15 +5,21 @@
     font-family: "Nunito", sans-serif;
 }
 
+
 .caixa-principal {
     height: 100vh;
     width: 100%;
-    background-image: url(./img/background.png);
     background-size: cover;
     background-position: center;
     background-color: #000000;
     color: white;
     padding-left: 2%;
+}
+
+.caixa-principal img {
+    height: 450px;
+    margin-left: 50%;
+    margin-top: -2%;
 }
 
 nav {
@@ -187,7 +193,7 @@ section div button:hover {
 }
 
 footer {
-    background-color: #000;
+    background-color: #000000;
     padding-top: 100px;
     padding-bottom: 120px;
     display: flex;
@@ -235,17 +241,31 @@ footer p {
 }
 
 
-@media screen and (max-width: 1000px){   
-    .lista-menu {
+@media screen and (max-width: 900px){   
+    .lista-menu, .caixa-principal img {
     display: none;
+   }
+
+   .caixa-principal {
+    height: 10vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: #000000;
    }
 
    .portfolio {
     font-size: 150%;
    }
 
+   section {
+    background-color: #000000;
+   }
+
+
    .nome {
     font-size: 180%;
+    text-align: center;
    }
 
    .cargo {
@@ -272,14 +292,19 @@ footer p {
 
    .card {
     width: 300px;
-    margin-right: -20px;
+    margin-right: -45px;
     margin-top: 10%;
    }
 
-   .contato {
+   section div button {
     width: 300px;
-    margin: 0 auto;
     font-size: 25px;
+    margin: 0 auto;
+   }
+
+   .titulo-projetos {
+    font-size: 250%;
+    
    }
 
    .sobre img {
