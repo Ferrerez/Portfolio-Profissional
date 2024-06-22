@@ -172,7 +172,8 @@ section div button:hover {
 }
 
 .card img {
-    height: 100px;
+    height: 80px;
+    align-items: center;
 }
 
 .card h5 {
