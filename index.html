@@ -10,29 +10,34 @@
     <title>Rodolfo Ferrerez Rocha</title>
 </head>
 <body>
-    <div class="caixa-principal">
-        <div>
-            <h2 class="portfolio">Portfólio</h2>
-            <h1>Rodolfo Ferrerez Rocha</h1>
-            <h3>Desenvolvedor FrontEnd</h3>
-            <img src="./img/background.png">
-        <nav class="menu">
-            <ul>
-            
-            <li><a href="#sobre" class="line">Sobre</a></li>
-            <li><a href="#projetos" class="line">Projetos</a></li>
-            <li><a href="#fale-comigo" class="line">Fale Comigo</a></li>
-            
-            </ul>
-        </nav>
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="nav-links" id="nav-links">
+            <a href="#caixa-principal">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#fale-comigo">Contato</a>
         </div>
+    </div>
+    <div class="caixa-principal">
+            <div>
+                <h2 class="portfolio">Portfólio</h2>
+                <h1>Rodolfo Ferrerez Rocha</h1>
+                <h3>Desenvolvedor FrontEnd</h3>
+            </div>
     </div>
 
     <section class="sobre" id="sobre">
         <img src="./img/rodolfo.png" alt="">
         <div>
             <h2>Sobre mim</h2>
-            <p>Nascido na cidade mineira de Três Corações, desde a infância completamente aficionado por tecnologia e suas maravilhas, residindo atualmente em Belo Horizonte, com experiência longa na área tecnológica, iniciando a jornada no desenvolvimento, buscando a cada dia aprender um pouco mais, olhando para o futuro com grande entusiasmo e fé.</p>
+            <p>           
+                Tenho 35 anos e sou um entusiasta da tecnologia, atualmente estudando HTML5, CSS3 e JavaScript. Apaixonado por desenvolvimento web, estou constantemente aprimorando minhas habilidades para criar sites e aplicações interativas e funcionais.
+                
+                No meu portfólio, você encontrará projetos que refletem meu comprometimento com o aprendizado contínuo e a qualidade no desenvolvimento. Cada projeto é uma oportunidade de aplicar o conhecimento adquirido e explorar novas técnicas e ferramentas.
+                
+                Estou animado para compartilhar meu progresso e espero que você goste do que vê aqui. Fique à vontade para explorar e entrar em contato se tiver alguma pergunta ou oportunidade de colaboração.
+            </p>
             <a href="mailto:rodolfomocmg@gmail.com"><button>Entre em contato</button></a>
         </div>
     </section>
@@ -78,6 +83,18 @@
             </a>
         </div>
         <p class="footer-direitos">&copy; 2024 - Todos os direitos reservados</p>
-    </footer>    
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("nav-links");
+            if (navLinks.classList.contains("responsive")) {
+                navLinks.classList.remove("responsive");
+            } else {
+                navLinks.classList.add("responsive");
+            }
+        }
+    </script>
+      
 </body>
 </html>

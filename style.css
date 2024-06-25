@@ -1,101 +1,71 @@
 @charset "UTF-8";
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: "Nunito", sans-serif;
 }
 
 .caixa-principal {
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
     background-color: #000000;
-    padding-left: 2%;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: rgb(240, 0, 0);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    display: block;
 }
 
 .portfolio {
     color: rgb(255, 0, 0);
     font-size: 40px;
     font-weight: 500;
-}
-
-.caixa-principal img {
-    height: 550px;
-    margin-left: 50%;
-    margin-top: -8%;
+    margin-left: 80%;
+    border-top: 80px solid black;
 }
 
 h1 {
     color: white;
     font-size: 70px;
+    text-align: center;
 }
 
 h3 {
-    margin-left: 30%;
+
     font-size: 25px;
     color: #ff0000;
-}
-
-.menu { 
-    display: flex;
-    margin-top: -28%;
-    margin-left: 10%;
-}
-
-ul,li {  
-  margin: 5;
-  padding: 5;
-  list-style: none;
-  margin-left: 7%;
-}
-li {  
-  position: relative;
-  float: left;
-  width: 80%;
-  height: 50px;
-  display: block;
-  margin-bottom:10px;
-  overflow:hidden;
-  border-radius:50px;
-  text-align: center;
-  font-size: 150%;
-  cursor: pointer;
-}
-.line span { 
-    z-index:1;
-    position:relative; 
-}
-.line {
-  display: block;
-  padding: 2px;
-  line-height: 50px;
-  text-decoration: none;
-  color:#ffffff;
-  background-color:#ff0000;
-}
-.line:hover { 
-    background-color: #ffffff;
-    color:#000000; 
-    transition:0.3s;
-}
-.line:after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: -60px;
-    display: block;
-    height: 70px;
-    width: 70px;
-    border-radius: 100%;
     text-align: center;
-    background-color: #ffffff;
-    transition: 0.3s;
-}
-li:hover .line:after {
-  left:-50px;
-  background-color:#000000; 
 }
 
 section {
@@ -116,6 +86,7 @@ section img {
 section div h2 {
     color: rgb(255, 0, 0);
     font-size: 75px;
+    text-align: center;
 }
 
 section div p {
@@ -123,6 +94,7 @@ section div p {
     font-size: 24px;
     margin-top: 15px;
     margin-bottom: 60px;
+    text-align: center;
 }
 
 section div button {
@@ -134,6 +106,7 @@ section div button {
     border: none;
     border-radius: 26px;
     cursor: pointer;
+    margin-left: 30%;
 }
 
 section div button:hover {
@@ -153,7 +126,7 @@ section div button:hover {
 }
 
 .titulo-projetos {
-    color: white;
+    color: rgb(255, 0, 0);
     font-size: 60px;
     text-align: center;
     background-color: #000000;
@@ -167,7 +140,7 @@ section div button:hover {
     border-radius: 20px;
     padding: 20px 20px;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 10%;
 }
 
@@ -199,7 +172,7 @@ section div button:hover {
 .card a:hover {
     color: #000000;
     background-color: #ffffff;
-    transition: 0.5s;
+    transition: 0.2s;
     border: 2px solid #ff0000;
 }
 
@@ -272,11 +245,6 @@ footer p {
     margin-left: -5%;
    }
 
-   .menu { 
-    display: flex;
-    margin-top: 5%;
-    margin-left: 5%;
-    }
 
    section {
     background-color: #000000;
@@ -339,7 +307,7 @@ footer p {
    .sobre img {
     height: 300px;
     margin-right: 0px;
-    margin-top: 60%;
+    margin-top: 15%;
    }
 
    .footer {
@@ -349,4 +317,30 @@ footer p {
    .footer h5 {
     font-size: 20px;
    }
+
+   @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-links a {
+        text-align: left;
+        padding: 14px;
+        border-top: 1px solid #444;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+.nav-links.responsive {
+    display: flex;
+}
 }
